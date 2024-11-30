@@ -1,0 +1,48 @@
+/* src/index.css */
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+  color: #333;
+} */
+
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensures that arrows are properly positioned */
+.slick-prev, .slick-next {
+  z-index: 10;  /* Ensure arrows are above other elements */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 30px; /* Adjust the size of the arrows */
+  color: white;  /* Change arrow color if needed */
+}
+
+.slick-prev {
+  left: 10px;  /* Position the left arrow */
+}
+
+.slick-next {
+  right: 10px;  /* Position the right arrow */
+}
+
+/* If you want to adjust the padding/spacing around the arrows */
+.slick-prev, .slick-next {
+  padding: 10px;
+}
+
+
+
+
