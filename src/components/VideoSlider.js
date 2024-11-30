@@ -190,7 +190,7 @@ const VideoSlider = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    centerMode: true,
+    centerMode: true, 
     centerPadding: '0px',
     focusOnSelect: true,
     beforeChange: (oldIndex, newIndex) => setActiveSlide(newIndex),
@@ -227,7 +227,7 @@ const VideoSlider = () => {
     <div className=" py-10 text-center text-white">
       <h2 style={{ color: '#775D47' }} className="text-2xl font-bold mb-2"> Capella for luxury weddings & event designer</h2>
       
-      <div className="relative mx-auto max-w-5xl px-4 overflow-hidden p-10">
+      <div className="relative mx-auto max-w-5xl px-4 overflow-hidden">
         <Slider {...settings}>
           {videos.map((video, index) => (
             <div key={index} className="flex mb-10 mt-10  justify-center">
@@ -235,8 +235,8 @@ const VideoSlider = () => {
                 className={`relative overflow-hidden rounded-lg transition-all duration-500 ${
                   index === activeSlide
                     ? 'transform scale-110 z-20' // Larger scale and higher z-index for center
-                    : 'transform scale-100 z-10 opacity-75'
-                }`}
+                    : 'transform scale-90 z-10 opacity-75'
+                }`} 
                 style={{
                   transformOrigin: 'center', // Scale from the center of each video
                   marginLeft: index === activeSlide - 1 ? '-30px' : '0', // Overlap left
@@ -245,7 +245,7 @@ const VideoSlider = () => {
               >
                 <video controls  loop src={video.src} alt={video.alt} className="aspect-video w-full h-64 object-cover rounded-lg" />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-                  <FaPlay className="text-white text-4xl" />
+                  <FaPlay className="text-white text-3xl text-4xl" />
                 </div>
               </div>
             </div>
