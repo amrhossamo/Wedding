@@ -173,13 +173,17 @@
 
 
 
-
-
 import React, { useState } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaPlay } from 'react-icons/fa';
+
+const Video1 = require('../img/Video1.mp4');
+const Video2 = require('../img/Video2.mp4');
+const Video3 = require('../img/Video3.mp4');
+const Video4 = require('../img/Video4.mp4');
+const vector = require('../img/043.png')
 
 const VideoSlider = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -193,6 +197,7 @@ const VideoSlider = () => {
     centerMode: true, 
     centerPadding: '0px',
     focusOnSelect: true,
+    
     beforeChange: (oldIndex, newIndex) => setActiveSlide(newIndex),
     responsive: [
       {
@@ -213,39 +218,58 @@ const VideoSlider = () => {
   };
 
   const videos = [
-    { src: 'img/Video1.mp4', alt: 'Video 1' },
-    { src: 'img/Video1.mp4', alt: 'Video 2' },
-    { src: 'img/Video1.mp4', alt: 'Video 3' },
-    { src: 'img/Video1.mp4', alt: 'Video 4' },
-    { src: 'img/Video1.mp4', alt: 'Video 5' },
-    { src: 'img/Video1.mp4', alt: 'Video 6' },
+    { src: Video4, alt: 'Video 1' },
+    { src: Video3, alt: 'Video 2' },
+    { src: Video1, alt: 'Video 3' },
+    { src: Video4, alt: 'Video 5' },
+    { src: Video2, alt: 'Video 4' },
+    
 
-
+    
   ];
 
   return (
-    <div className=" py-10 text-center text-white">
-      <h2 style={{ color: '#775D47' }} className="text-2xl font-bold mb-2"> Capella for luxury weddings & event designer</h2>
+    <div style={{   position:'relative'}} className="py-10 text-center text-white">
+      <div style={{ position: 'relative' }}>
+        <img src={vector} alt="Vector" style={{ position: 'absloute', top: '0', left: '0',width: '20px' , height: '20px' , zIndex: '10' }} />
+        </div>
+      <h2 style={{ color: '#775D47' }} className="text-2xl font-bold mb-2">
+        Capella for luxury weddings & event designer
+      </h2>
+
       
       <div className="relative mx-auto max-w-5xl px-4 overflow-hidden">
         <Slider {...settings}>
           {videos.map((video, index) => (
-            <div key={index} className="flex mb-10 mt-10  justify-center">
+            <div key={index} className="flex mb-10 mt-10 justify-center">
               <div
                 className={`relative overflow-hidden rounded-lg transition-all duration-500 ${
                   index === activeSlide
-                    ? 'transform scale-110 z-20' // Larger scale and higher z-index for center
+                    ? 'transform scale-110 z-20'
                     : 'transform scale-90 z-10 opacity-75'
                 }`} 
                 style={{
-                  transformOrigin: 'center', // Scale from the center of each video
-                  marginLeft: index === activeSlide - 1 ? '-30px' : '0', // Overlap left
-                  marginRight: index === activeSlide + 1 ? '-30px' : '0', // Overlap right
+                  transformOrigin: 'center',
+                  marginLeft: index === activeSlide - 1 ? '-30px' : '0',
+                  marginRight: index === activeSlide + 1 ? '-30px' : '0',
                 }}
               >
-                <video controls  loop src={video.src} alt={video.alt} className="aspect-video w-full h-64 object-cover rounded-lg" />
-                <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-                  <FaPlay className="text-white text-3xl text-4xl" />
+                <div className="relative">
+                  <video 
+                    controls 
+                    loop 
+                    src={video.src}
+                    autoPlay={index === activeSlide} 
+                    onError={(e) => console.error('Video load error', e)}
+                    onCanPlay={() => console.log('Video can play')}
+                    preload="auto"
+                    className="aspect-video w-full h-64 object-cover rounded-lg" 
+                  />
+                  {index !== activeSlide && (
+                    <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center pointer-events-none">
+                      <FaPlay className="text-white text-4xl" />
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -257,7 +281,6 @@ const VideoSlider = () => {
 };
 
 export default VideoSlider;
-
 
 
 

@@ -17,7 +17,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+body { 
+  overflow-x: hidden !important;
+}
 /* Ensures that arrows are properly positioned */
 .slick-prev, .slick-next {
   z-index: 10;  /* Ensure arrows are above other elements */
