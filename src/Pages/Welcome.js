@@ -1,5 +1,5 @@
 import React from 'react';
-
+const character = require('../img/whatsapp.png');
 function Welcome() {
   return (
     <div
@@ -10,10 +10,10 @@ function Welcome() {
         {/* Character Image */}
         <div className="flex-shrink-0 mb-8 lg:mb-0">
           <img
-            src="/img/whatsapp.png"
+            src={character}
             alt="Character"
             className="w-80 md:w-96 max-w-full h-auto"
-            
+
           />
         </div>
 
