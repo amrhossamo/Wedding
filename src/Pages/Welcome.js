@@ -1,5 +1,5 @@
 import React from 'react';
-const character = require('../img/whatsapp.png');
+const character = require('../img/WhatsApp.png');
 function Welcome() {
   return (
     <div
