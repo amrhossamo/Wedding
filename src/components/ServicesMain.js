@@ -1,7 +1,9 @@
 import React from 'react'
 import {  HiArrowRight } from 'react-icons/hi';
 import Card from './Card';
-
+const image1= require("../img/Icon.png");
+const image2= require("../img/Icon (1).png");
+const image3= require("../img/Icon (2).png");
 const ServicesMain = () => {
     return (
         <>
@@ -15,21 +17,21 @@ const ServicesMain = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-9 " >
                     <div className="col-span-1  ">
                         <Card
-                            icon={<img src='img/icon.png' alt=" wedding management" />}
+                            icon={<img src={image1} alt=" wedding management" />}
                             heading="Wedding management  "
                             paragraph="Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit diam. Mauris cursus suscipit "
                         />
                     </div>
                     <div className="col-span-1">
                         <Card
-                            icon={<img src='img/icon (1).png' alt=" event" />}
+                            icon={<img src={image2} alt=" event" />}
                             heading=" Event Organizing "
                             paragraph="Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit diam. Mauris cursus suscipit"
                         />
                     </div>
                     <div className="col-span-1">
                         <Card
-                            icon={<img src='img/icon (2).png' alt="kids " />}
+                            icon={<img src={image3} alt="kids " />}
                             heading=" Kids corner "
                             paragraph="Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit diam. Mauris cursus suscipit"
                         />

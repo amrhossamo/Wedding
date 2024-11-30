@@ -13,6 +13,7 @@ function Welcome() {
             src="/img/whatsapp.png"
             alt="Character"
             className="w-80 md:w-96 max-w-full h-auto"
+            
           />
         </div>
 
