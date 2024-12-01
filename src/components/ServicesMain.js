@@ -10,7 +10,7 @@ const ServicesMain = () => {
             <div className="flex flex-col items-center px-6 md:px-10 lg:px-[90px] py-8 md:py-10 lg:py-12 relative">
                 <img src="/img/Vector.png" alt="Vector Decoration 2" className="absolute top-5 left-[39%] w-4 h-4 md:w-8 md:h-8 lg:w-10 lg:h-9 pointer-events-none z-10" />
                 <img src="/img/Vector1.png" alt="Vector Decoration 3" className="absolute top-5 left-[60%] w-4 h-4 md:w-8 md:h-8 lg:w-10 lg:h-9 pointer-events-none z-10" />
-                <h2 style={{ color: '#775D47' }} className="text-xl md:text-2xl font-semibold  mb-2">Our Services </h2>
+                <h2 style={{ color: '#775D47' , fontFamily: 'Cormorant , serif',  }} className="text-xl md:text-4xl font-semibold  mb-2">Our Services </h2>
                 
                 
                 {/* الشبكة لتصبح Responsive */}

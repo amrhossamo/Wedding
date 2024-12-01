@@ -19,7 +19,7 @@ function Welcome() {
 
         {/* Feature List */}
         <div className="space-y-12 text-center w-full lg:w-2/3">
-          <h2 className="text-4xl font-bold mb-8">Why Us?</h2>
+          <h2 style={{ fontFamily: 'Cormorant , serif' }} className="text-4xl font-bold mb-8">Why Us?</h2>
           <div className="lg:translate-x-20">
             <Feature
               icon="/img/why4.png"

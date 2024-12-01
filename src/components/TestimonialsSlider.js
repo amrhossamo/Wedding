@@ -64,7 +64,7 @@ const TestimonialsSlider = () => {
 
   return (
     <div className="bg-white mb-20 mt-20 py-10 text-center">
-      <h2 style={{ color: '#775D47' }} className="text-2xl font-bold  mb-8"> Clients Reviews</h2>
+      <h2 style={{ color: '#775D47',fontFamily: 'Cormorant , serif', }} className="text-3xl font-bold  mb-8"> Clients Reviews</h2>
 
       <div className="relative mx-auto max-w-7xl px-4">
         <Slider {...settings}>

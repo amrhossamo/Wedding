@@ -233,7 +233,7 @@ const VideoSlider = () => {
       <div style={{ position: 'relative' }}>
         <img src={vector} alt="Vector" style={{ position: 'absloute', top: '0', left: '0',width: '20px' , height: '20px' , zIndex: '10' }} />
         </div>
-      <h2 style={{ color: '#775D47' }} className="text-2xl font-bold mb-2">
+      <h2 style={{ color: '#775D47' , fontFamily: 'Cormorant , serif', }} className="text-4xl font-bold mb-2">
         Capella for luxury weddings & event designer
       </h2>
 
