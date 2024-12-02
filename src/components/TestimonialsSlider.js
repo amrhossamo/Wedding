@@ -7,26 +7,26 @@ import "slick-carousel/slick/slick-theme.css";
 const testimonials = [
   {
     id: 1,
-    name: "Tamer Ahmed",
-    text: "I Highly recommend this platform if you want to enjoy and book a wedding or event in Saudi Arabia",
-    rating: 4,
+    name: "Zainab mostafa",
+    text: "Amazing experience! The flower design and modern decor ideas were exactly what I was looking for. The attention to detail and the variety of options helped me create the perfect event. I couldn't be happier!",
+    rating: 5,
   },
   {
     id: 2,
-    name: " Tamer Ahmed",
-    text: "I Highly recommend this platform if you want to enjoy and book a wedding or event in Saudi Arabia",
+    name: "Aya Mohamed",
+    text: "The photography and video services showcased here are exceptional. The quality is top-notch, and it truly captures every magical moment. I’m so glad I stumbled upon this site—it’s a must-visit for event planning.",
     rating: 5,
   },
   {
     id: 3,
-    name: "Tamer Ahmed ",
-    text: "I Highly recommend this platform if you want to enjoy and book a wedding or event in Saudi Arabia",
+    name: "asmaa shazly",
+    text: "Beautifully designed and easy to use! This website has everything you need for a modern event, from elegant decorations to high-quality photography. It saved me so much time and effort. Absolutely loved it.",
     rating: 4,
   },
   {
     id: 4,
-    name: " Tamer Ahmed",
-    text: "I Highly recommend this platform if you want to enjoy and book a wedding or event in Saudi Arabia",
+    name: "Adham",
+    text: "This website made planning my wedding so much easier! The design options are stunning, and the user interface is simple to navigate. I loved how everything was organized, from decorations to photography. Highly recommend for anyone planning a special event.",
     rating: 5,
   },
 ];

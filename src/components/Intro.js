@@ -9,18 +9,18 @@ const Intro = () => {
                     <img src='/img/Frame.png'></img>
                     
 
-                    <p className="text-base md:text-xl text-gray-700 mb-2 flex items-center justify-center md:justify-start">
+                    <p style={{color: 'gray' , fontStyle: 'italic' , fontFamily: 'serif', fontSize: '20px' }} className="text-base md:text-xl text-gray-700 mb-2 flex items-center justify-center md:justify-start">
                         
-                        Make your wedding luxurious and glamorousan 
+                      Create a luxurious and glamorous wedding 
                     </p>
 
-                    <p className="text-base md:text-lg text-gray-700 mb-2 flex items-center justify-center md:justify-start">
+                    <p style={{color: 'gray' , fontStyle: 'italic' , fontFamily: 'serif', fontSize: '20px' }}  className="text-base md:text-lg text-gray-700 mb-2 flex items-center justify-center md:justify-start">
                         
-                        with amazing views that make your special day
+                       with breathtaking views and exceptional service,
                     </p>
 
-                    <p className="text-base md:text-lg text-gray-700 mb-4 flex items-center justify-center md:justify-start">
-                    exceptional event with special service
+                    <p style={{color: 'gray' , fontStyle: 'italic' , fontFamily: 'serif', fontSize: '20px' }}  className="text-base md:text-lg text-gray-700 mb-4 flex items-center justify-center md:justify-start">
+                    making your special day truly unforgettable.
                     </p>
 
                     <div className="flex justify-center md:justify-start">
@@ -31,7 +31,7 @@ const Intro = () => {
                               style={{ backgroundColor: '#775D47' }} 
                               className="text-white px-3 md:px-4 py-2 rounded-md flex items-center"
                                                               >
-                             contact us via whatsapp
+                             contact with us via whatsapp
                              <FaWhatsapp className="mr-4 m-2" />
                            </a>
                     </div>

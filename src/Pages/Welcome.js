@@ -24,28 +24,27 @@ function Welcome() {
             <Feature
               icon="/img/why4.png"
               title="Flower Design"
-              description="We offer a wide range of luxury decoration options, including lighting and more."
-            />
+              description="Luxurious flower designs with stunning decor and lighting, perfect for transforming any space beautifully."/>
           </div>
 
           <Feature
             icon="/img/why4.png"
             title="Modern Decoration"
-            description="We offer a wide range of luxury decoration options, including lighting and more."
+            description="Modern decoration with sleek designs, luxury lighting, and elegant flower arrangements for any occasion."
           />
 
           <div className="lg:translate-x-20">
             <Feature
               icon="/img/why4.png"
               title="Modern Events"
-              description="We offer a wide range of luxury decoration options, including lighting and more."
+              description="Modern event designs with stylish decor, elegant flowers, and sophisticated lighting for unforgettable moments."
             />
           </div>
 
           <Feature
             icon="/img/why4.png"
             title="Photography and Video"
-            description="We offer a wide range of luxury decoration options, including lighting and more."
+            description="Professional photography and video services to capture your special moments with creativity and style."
           />
         </div>
       </div>

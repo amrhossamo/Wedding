@@ -18,22 +18,22 @@ const ServicesMain = () => {
                     <div className="col-span-1  ">
                         <Card
                             icon={<img src={image1} alt=" wedding management" />}
-                            heading="Wedding management  "
-                            paragraph="Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit diam. Mauris cursus suscipit "
+                            heading="Wedding Management  "
+                            paragraph="Elegant and charming, our wedding celebrations blend tradition and modernity with rich cultural values. Every detail is meticulously planned, creating an unforgettable experience of splendor and luxury. "
                         />
                     </div>
                     <div className="col-span-1">
                         <Card
                             icon={<img src={image2} alt=" event" />}
-                            heading=" Event Organizing "
-                            paragraph="Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit diam. Mauris cursus suscipit"
+                            heading=" Modern Events"
+                            paragraph="Weddings and special events mark life’s most cherished moments. We dedicate our expertise to understanding your vision, values, and message, delivering uniquely creative and personalized event solutions."
                         />
                     </div>
                     <div className="col-span-1">
                         <Card
                             icon={<img src={image3} alt="kids " />}
-                            heading=" Kids corner "
-                            paragraph="Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit diam. Mauris cursus suscipit"
+                            heading=" Kide parties "
+                            paragraph="our younger clients love big parties too which why we offer our party planning, design and entertainment service"
                         />
                     </div>
                 </div>
