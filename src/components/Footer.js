@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+import {  FaInstagram,  } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 
@@ -15,7 +15,7 @@ const Footer = () => {
           <ul className="space-y-2 text-gray-200">
             <li><button className="text-gray-200 mb-2 text-lg hover:text-gray-300">Help</button></li>
             <li>
-  <Link to="/services">
+  <Link to="/">
     <button className="text-gray-200 mb-2 text-lg hover:text-gray-300">Services</button>
   </Link>
 </li>         
